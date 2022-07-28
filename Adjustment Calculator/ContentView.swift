@@ -11,6 +11,17 @@ struct ContentView: View {
 	
 	@State var lineAmount = 0.0
 	@State var tankLevel = 0.0
+	var totalSystemQty = 0.0
+	let thickenerPerGaFull = 0.005
+	var thickenerFullHit = 0.0
+	let thickenerPerGaHalf = 0.0025
+	var thickenerHalfHit = 0.0
+	let aminePerGaFull = 0.0005
+	var amineFullHit = 0.0
+	let aminePerGaHalf = 0.00025
+	var amineHalfHit = 0.0
+	let thickenerName = "VG46609 Thickener"
+	let amineName = "H-28 Amine"
 	
     var body: some View {
 		NavigationView {
@@ -32,7 +43,13 @@ struct ContentView: View {
 				}
 					
 				Section(header: Text("Thickener Adjustments:")) {
-					// Display half & whole hits
+					//totalSystemQty = lineAmount + tankLevel
+					//thickenerFullHit = totalSystemQty * thickenerPerGaFull
+					//thickenerHalfHit = totalSystemQty * thickenerPerGaHalf
+					//VStack {
+						//Text("A full system hit is: \(thickenerFullHit) gallons")
+						//Text("A half system hit is: \(thickenerHalfHit) gallons")
+					//}
 				}
 				
 				Section(header: Text("Amine Adjustments:")) {
