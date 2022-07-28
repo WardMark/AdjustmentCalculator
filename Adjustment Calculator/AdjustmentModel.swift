@@ -14,6 +14,5 @@ let aminePerGaHalf = 0.00025
 let thickenerName = "VG46609 Thickener"
 let amineName = "H-28 Amine"
 
-var tankLevel = 0.0
-var lineAmount = 0.0
+
 

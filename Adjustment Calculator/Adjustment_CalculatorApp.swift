@@ -11,7 +11,9 @@ import SwiftUI
 struct Adjustment_CalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			NavigationView {
+				ContentView()
+			}
         }
     }
 }
